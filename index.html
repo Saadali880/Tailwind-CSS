@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saad Ali-Portfolio</title>
+  <link rel="icon" type="image/png" href="IMG_20230321_112011.jpg" />
+
+  <!-- ✅ Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- ✅ Custom Neon Colors via Tailwind Config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'neon-green': '#39FF14',
+            'neon-pink': '#FF00FF',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-black text-white font-sans scroll-smooth">
+  <!-- Navbar -->
+  <header class="fixed top-0 w-full bg-black z-50 shadow-lg">
+    <nav class="flex justify-around p-4 text-neon-green font-bold">
+      <a href="#home" class="hover:text-neon-pink">Home</a>
+      <a href="#about" class="hover:text-neon-pink">About</a>
+      <a href="#projects" class="hover:text-neon-pink">Projects</a>
+      <a href="#contact" class="hover:text-neon-pink">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home"
+    class="h-screen flex flex-col justify-center items-center text-center bg-gradient-to-br from-black to-gray-900 pt-20">
+    <img src="IMG_20230321_112011.jpg" alt="Profile Photo"
+      class="w-32 h-32 rounded-full border-4 border-neon-green mb-4" />
+    <h1 class="text-4xl md:text-5xl text-neon-green font-bold">Saad Ali</h1>
+    <p class="text-lg text-neon-pink mt-2">Full stack developer</p>
+    <p class="mt-4 italic">"Turning ideas into interactive digital experiences."</p>
+    <a href="resume.pdf"
+      class="mt-6 inline-block px-6 py-2 bg-neon-pink hover:scale-105 transition rounded shadow-lg">Download Resume</a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 px-6 bg-gray-900">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-neon-green mb-6">About Me</h2>
+      <p class="mb-4">I am a passionate frontend developer with skills in HTML, Tailwind CSS, and JavaScript. I love
+        creating sleek, responsive interfaces.</p>
+      <ul class="flex flex-wrap justify-center gap-4 text-sm text-gray-300">
+        <li class="bg-gray-800 px-4 py-2 rounded-lg">HTML</li>
+        <li class="bg-gray-800 px-4 py-2 rounded-lg">Tailwind CSS</li>
+        <li class="bg-gray-800 px-4 py-2 rounded-lg">JavaScript</li>
+        <li class="bg-gray-800 px-4 py-2 rounded-lg">React</li>
+        <li class="bg-gray-800 px-4 py-2 rounded-lg">Express</li>
+      </ul>
+      <div class="mt-6">
+        <p class="text-sm">2022 – Present: BS in Computer Science (4rd Semester)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 px-6 bg-black">
+    <h2 class="text-3xl font-bold text-center text-neon-green mb-12">Projects</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="bg-gray-800 p-6 rounded-xl hover:scale-105 transition shadow-xl">
+        <img src="image3.jpeg" class="rounded mb-4" alt="Project 1" />
+        <h3 class="text-xl font-semibold text-neon-pink">Live weather App</h3>
+        <p class="text-sm text-gray-300 mb-4">this app shows current weather using API data</p>
+
+      </div>
+      <div class="bg-gray-800 p-6 rounded-xl hover:scale-105 transition shadow-xl">
+        <img src="image1.jpeg" class="rounded mb-4" alt="Project 2" />
+        <h3 class="text-xl font-semibold text-neon-pink">App for food catering business</h3>
+        <p class="text-sm text-gray-300 mb-4">Cantain all the details of business</p>
+
+      </div>
+      <div class="bg-gray-800 p-6 rounded-xl hover:scale-105 transition shadow-xl">
+        <img src="image2.jpeg" class="rounded mb-4" alt="Project 3" />
+        <h3 class="text-xl font-semibold text-neon-pink">Calculator APP</h3>
+        <p class="text-sm text-gray-300 mb-4">A simple calculator App </p>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 px-6 bg-gray-900">
+    <h2 class="text-3xl font-bold text-center text-neon-green mb-8">Contact Me</h2>
+    <form class="max-w-lg mx-auto space-y-4">
+      <input type="text" placeholder="Name" class="w-full p-3 rounded bg-black border border-neon-green text-white" />
+      <input type="email" placeholder="Email" class="w-full p-3 rounded bg-black border border-neon-green text-white" />
+      <textarea placeholder="Message" rows="4"
+        class="w-full p-3 rounded bg-black border border-neon-green text-white"></textarea>
+      <button type="submit" class="w-full bg-neon-pink py-3 rounded hover:scale-105 transition shadow-lg">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-6 text-center bg-black text-sm text-gray-500">
+    &copy; 2025 Saad Ali-Portfolio. All rights reserved.
+  </footer>
+</body>
+
+</html>
